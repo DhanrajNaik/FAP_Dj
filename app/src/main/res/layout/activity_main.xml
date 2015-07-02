@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+
+        ></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:id="@+id/email"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:hint="email">
+            <requestFocus />
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/pass"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="password">
+            <requestFocus />
+        </EditText>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/login"
+            android:layout_marginTop="10dp"
+            android:text="Login"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linktoRegister"
+            android:text="Not Registered ? Register Here"
+            android:layout_gravity="center"
+            android:background="@null"/>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/frameLayout">
+
+        <ImageButton
+            android:layout_margin="15dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_fab_star"
+            android:background="@drawable/circle"
+            android:id="@+id/imageButton"
+            android:layout_gravity="right|bottom" />
+
+
+    </FrameLayout>
+</RelativeLayout>
